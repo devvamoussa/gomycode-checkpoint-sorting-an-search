@@ -1,0 +1,16 @@
+ALGORITHM Tri
+VAR
+    elem , j , tableau:FLOAT
+
+BEGIN
+    FOR i FROM 0 TO len(tableau)-1 STEP step  DO
+        elem=tableau[i]
+        j=I
+        WHILE (j>0 and tableau[j-1]>elem) THEN
+            tableau[J]=tableau[j-1]
+            j=j-1
+        END_WHILE
+        tableau[J]=elem
+    END FOR
+    
+END
